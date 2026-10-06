@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #17131f;
+    color: white;
+}
+
+/* MENU */
+
+nav {
+    background-color: #2a1740;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 86%;
+    margin: 0 auto;
+    padding: 15px 30px;
+
+    border: 2px solid #7b2cbf;
+    border-radius: 50px;
+
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1000;
+}
+
+nav h1 {
+    margin: 0;
+    color: #ff4fa3;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ff4fa3;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    padding: 120px 10% 70px;
+
+    background: linear-gradient(#7b2cbf, #17131f);
+}
+
+header div {
+    max-width: 500px;
+}
+
+header h2 {
+    font-family: "Caveat", cursive;
+    font-size: 60px;
+    color: #ff4fa3;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+header img {
+    width: 300px;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background-color: #ff4fa3;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-color: #7b2cbf;
+}
+
+/* SEÇÕES */
+
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section h2 {
+    color: #ff4fa3;
+    font-size: 30px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* SINOPSE */
+
+.caixa-sinopse {
+    background-color: #2a1740;
+
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border: 2px solid #7b2cbf;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px #000000;
+}
+
+.caixa-sinopse p {
+    color: white;
+}
+
+.caixa-sinopse:hover {
+    border-color: #ff4fa3;
+    transition: 0.3s;
+}
+
+/* TRAILER */
+
+iframe {
+    max-width: 100%;
+    border-radius: 15px;
+    border: 4px solid #7b2cbf;
+}
+
+/* PERSONAGENS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #2a1740;
+
+    width: 220px;
+    padding: 20px;
+
+    border-radius: 15px;
+    border: 2px solid #7b2cbf;
+
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #ff4fa3;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #ff4fa3;
+}
+
+/* OUTROS PERSONAGENS */
+
+.mais-personagens {
+    background-color: #2a1740;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.mais-personagens h3 {
+    color: #ff4fa3;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.lista-personagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.personagem {
+    background-color: #17131f;
+
+    border: 2px solid #7b2cbf;
+    border-radius: 12px;
+
+    padding: 15px;
+    width: 200px;
+
+    transition: 0.3s;
+}
+
+.personagem h4 {
+    color: #ff4fa3;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.personagem p {
+    color: white;
+    font-size: 14px;
+}
+
+.personagem:hover {
+    border-color: #ff4fa3;
+    transform: translateY(-5px);
+}
+
+/* CURIOSIDADES */
+
+#curiosidades {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 50px 30px;
+
+    border: 2px solid #7b2cbf;
+    border-radius: 20px;
+    background-color: #17131f;
+}
+
+.curiosidades-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+}
+
+.curiosidade {
+    background-color: #2a1740;
+    width: 280px;
+    padding: 25px;
+
+    border: 2px solid #7b2cbf;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.curiosidade h3 {
+    color: #ff4fa3;
+    margin-top: 0;
+}
+
+.curiosidade p {
+    font-size: 15px;
+}
+
+.curiosidade:hover {
+    border-color: #ff4fa3;
+    transform: translateY(-5px);
+}
+
+/* GALERIA */
+
+.galeria {
+    background-color: #17131f;
+}
+
+.posters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.posters img {
+    width: 250px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 4px solid #7b2cbf;
+
+    box-shadow: 0 8px 20px #000000;
+
+    transition: 0.3s;
+}
+
+.posters img:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: #ff4fa3;
+}
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 400px;
+    margin: auto;
+
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+
+    border-radius: 10px;
+    border: 2px solid #7b2cbf;
+
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    padding: 12px;
+
+    background-color: #ff4fa3;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7b2cbf;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7b2cbf;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff4fa3;
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    nav {
+        width: 94%;
+        padding: 12px 20px;
+    }
+
+    nav h1 {
+        font-size: 17px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 35px;
+    }
+
+    header img {
+        width: 250px;
+    }
+}
